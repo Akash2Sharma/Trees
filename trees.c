@@ -240,20 +240,7 @@ else{
  *****************************************/
 
 char BST_find(tree t, char target)
-{	//tree a,b; 
-  /* Add code here *
-if(t==NULL){printf("Tree Does Not exist");
-	return -1;	
-}
-if{
-	a=t;
-	while(a!=NULL){
-		if(target=a->value){
-			return a;
-		}
-else if(target < a->value)	
-}
-}*/
+{
 if(t==NULL||t->value==target) return t;
 if(t->value < target ) return BST_find(t->right,target);
 return  BST_find(t->left,target);;
