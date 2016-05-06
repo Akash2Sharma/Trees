@@ -144,8 +144,15 @@ void print_spaces(int tabs)
 void pt(tree t)
 {
   /* Add code here */
+	if(t==NULL) {
+		//printf("NO TREE EXIST");
+		
 }
-
+else{ printf("%c ",t->value);
+	pt(t->left);
+	pt(t->right);
+}
+}
 void print_tree(char *msg, tree t)
 {
   printf("%s: ", msg);
@@ -172,6 +179,15 @@ void print_tree_plus(char *before, tree t, char *after)
 void print_preorder(tree t)
 {
   /* Add code here */
+        if(t==NULL) {
+                //printf("NO TREE EXIST");
+                
+}
+else{ printf("%c ",t->value);
+        print_preorder(t->left);
+        print_preorder(t->right);
+}
+
 }
 
 /*
@@ -183,6 +199,16 @@ void print_preorder(tree t)
 void print_postorder(tree t)
 {
   /* Add code here */
+        if(t==NULL) {
+                //printf("NO TREE EXIST");
+                
+}
+else{ 
+print_preorder(t->left);
+print_preorder(t->right);
+printf("%c ",t->value);       
+}
+
 }
 
 /*
@@ -194,6 +220,17 @@ void print_postorder(tree t)
 void print_inorder(tree t)
 {
   /* Add code here */
+        if(t==NULL) {
+                //printf("NO TREE EXIST");
+                
+}
+else{ 
+        print_preorder(t->left);
+	printf("%c ",t->value);
+        print_preorder(t->right);
+}
+
+ /* Add code here */
 }
 
 /*****************************************
@@ -203,13 +240,38 @@ void print_inorder(tree t)
  *****************************************/
 
 char BST_find(tree t, char target)
-{
-  /* Add code here */
-  return '\0';
+{	//tree a,b; 
+  /* Add code here *
+if(t==NULL){printf("Tree Does Not exist");
+	return -1;	
+}
+if{
+	a=t;
+	while(a!=NULL){
+		if(target=a->value){
+			return a;
+		}
+else if(target < a->value)	
+}
+}*/
+if(t==NULL||t->value==target) return t;
+if(t->value < target ) return BST_find(t->right,target);
+return  BST_find(t->left,target);;
 }
 
 tree BST_insert(tree t, char value)
 {
-  /* Add code here */
-  return NULL;
+ if(t==NULL){
+	 /* Add code here */
+	t=(tree)malloc(sizeof(tree));
+	t->value=value;
+	t->left=NULL;
+	t->right=NULL;
+	}
+else if(value < (t->value)){
+	t->left=BST_insert(t->left,value);}
+else{
+t->right=BST_insert(t->right,value);
+}
+  return t;
 }
