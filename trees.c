@@ -144,11 +144,14 @@ void print_spaces(int tabs)
 void pt(tree t)
 {
   /* Add code here */
-	if(t==NULL) printf("NO TREE EXIST");
-	else{ printf("%c ",t->value);
-		pt(t->left);
-		pt(t->right);
-	}
+	if(t==NULL) {
+		//printf("NO TREE EXIST");
+		
+}
+else{ printf("%c ",t->value);
+	pt(t->left);
+	pt(t->right);
+}
 }
 void print_tree(char *msg, tree t)
 {
@@ -176,11 +179,14 @@ void print_tree_plus(char *before, tree t, char *after)
 void print_preorder(tree t)
 {
   /* Add code here */
-       if(t==NULL) printf("NO TREE EXIST");
-	else{ printf("%c ",t->value);
-        	print_preorder(t->left);
-        	print_preorder(t->right);
-	}
+        if(t==NULL) {
+                //printf("NO TREE EXIST");
+                
+}
+else{ printf("%c ",t->value);
+        print_preorder(t->left);
+        print_preorder(t->right);
+}
 
 }
 
@@ -193,12 +199,15 @@ void print_preorder(tree t)
 void print_postorder(tree t)
 {
   /* Add code here */
-        if(t==NULL)  printf("NO TREE EXIST");
-	else{ 
-		print_preorder(t->left);
-		print_preorder(t->right);
-		printf("%c ",t->value);       
-	    }
+        if(t==NULL) {
+                //printf("NO TREE EXIST");
+                
+}
+else{ 
+print_preorder(t->left);
+print_preorder(t->right);
+printf("%c ",t->value);       
+}
 
 }
 
@@ -211,7 +220,10 @@ void print_postorder(tree t)
 void print_inorder(tree t)
 {
   /* Add code here */
-        if(t==NULL)   printf("NO TREE EXIST");
+        if(t==NULL) {
+                //printf("NO TREE EXIST");
+                
+}
 else{ 
         print_preorder(t->left);
 	printf("%c ",t->value);
@@ -228,7 +240,7 @@ else{
  *****************************************/
 
 char BST_find(tree t, char target)
-{
+{	
 if(t==NULL||t->value==target) return t;
 if(t->value < target ) return BST_find(t->right,target);
 return  BST_find(t->left,target);;
