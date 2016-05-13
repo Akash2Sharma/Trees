@@ -225,9 +225,9 @@ void print_inorder(tree t)
                 
 }
 else{ 
-        print_preorder(t->left);
+        print_inorder(t->left);
 	printf("%c ",t->value);
-        print_preorder(t->right);
+        print_inorder(t->right);
 }
 
  /* Add code here */
