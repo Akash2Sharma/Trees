@@ -135,9 +135,8 @@ void print_spaces(int tabs)
 }
 
 /* Story 1
- * As a programmer, I want to be print a tree, so I see what is is in
- * it.
- */
+* As a programmer, I want to be print a tree, so I see what is is in it.
+*/
 
 void pt(tree t)
 {
