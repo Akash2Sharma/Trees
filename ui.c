@@ -28,7 +28,7 @@ void print_help(char command)
  * initialize(argc, argv)
  * parses the parameters to the program
  * return TRUE if successful; FALSE if there is an error
- */
+ */ 
 int initialize(int argc, char *argv[])
 {
   int arg = 1;
