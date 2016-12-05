@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "ui.h"
 #include "trees.h"                                                                 
-                                                    
+                                                                                                 
 /* Story 0
  * As a teacher, I want to be able to create a binary tree from a
  * string so my students can create trees for my students to operate
