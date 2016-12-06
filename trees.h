@@ -2,8 +2,7 @@
 #define arrays_h
 
 #define TRUE 1
-#define FALSE 0
-
+#define FALSE 0 
 struct node {
   char value;
   struct node *left;
