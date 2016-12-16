@@ -11,8 +11,7 @@
 
 void show_tree(char *t)
 {
-  int counter = 0;
-
+  int counter = 0; 
   printf("show_tree:%s\n", t);
   fflush(stdout);
   print_tree("\nProduces", make_tree(NULL, t, &counter));
