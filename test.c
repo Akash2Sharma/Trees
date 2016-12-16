@@ -25,7 +25,7 @@ void test0(void)
   show_tree("(a)");
   show_tree("(a(b) ())");
   show_tree("(a(b)(c))");
-  show_tree("(a(b(c(d)(e))())())"); 
+  show_tree("(a(b(c(d)(e))())())");  
   show_tree("(a(b(c)(d))e)");
   show_tree("(a(()(b)))");
 }
