@@ -28,7 +28,7 @@ tree make_tree(tree t, char *c, int *index);
 
 /* Story 1 */
 void print_tree(char *msg, tree t); 
-/* Story 2 */
+/* Story 2 */ 
 void print_preorder(tree t);
 
 /* Story 3 */
