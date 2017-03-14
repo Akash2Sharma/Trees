@@ -5,7 +5,7 @@
 #define TRUE 1
 #define FALSE 0
 
-/*
+/* 
   Interface: get and execute commands; get integers, floats, and strings
  */
 int initialize(int argc, char *argv[]);
