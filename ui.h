@@ -13,4 +13,4 @@ int execute();
 float get_float(char *msg);
 int get_int(char *msg);
 void get_string(char *msg, char *return_value);
-#endif 
+#endif  
