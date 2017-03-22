@@ -18,8 +18,7 @@ typedef struct node *tree;
 */
 
 /* Test code */
-tree test_tree();
-
+tree test_tree(); 
 /* Story 1 */
 int root_value(tree t);
 tree left_child(tree t);
