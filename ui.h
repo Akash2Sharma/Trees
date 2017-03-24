@@ -1,10 +1,8 @@
-        
 #ifndef ui_h  
 #define ui_h
 
 #define TRUE 1
 #define FALSE 0
-
 /* 
   Interface: get and execute commands; get integers, floats, and strings
  */
