@@ -2,7 +2,7 @@
 #include <stdio.h> 
 #include <stdlib.h>
 #include "trees.h"
-           
+            
 #define DEBUG 0
 #define SHOW_NULL 1
                      
