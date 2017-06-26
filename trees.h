@@ -1,6 +1,6 @@
                  
          
-#ifndef arrays_h
+#ifndef arrays_h 
 #define arrays_h
 
 #define TRUE 1
