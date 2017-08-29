@@ -1,7 +1,7 @@
                    
 #include <stdio.h>
 #include <stdlib.h>  
-#include "ui.h"
+#include "ui.h" 
 #include "trees.h"                                                                 
                                                                                                                             
 /* Story 0
